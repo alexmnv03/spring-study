@@ -1,5 +1,6 @@
 # Материалы с курса  Spring и Hibernate for Beginners
 
 src/main/java/com
+readme
 
-feature/core-ud-bean-life-cycle
+feature/core-java-config
