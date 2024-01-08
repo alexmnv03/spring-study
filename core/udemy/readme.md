@@ -3,4 +3,4 @@
 src/main/java/com
 readme
 
-feature/core-java-config
+feature/component-names
