@@ -3,4 +3,4 @@
 src/main/java/com
 readme
 
-feature/component-names
+feature/field-injection
