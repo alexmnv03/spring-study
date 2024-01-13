@@ -1,4 +1,4 @@
-package com.treug.depinjection;
+package com.treug.depinjection.model;
 
 public class Cat implements Pet{
 
