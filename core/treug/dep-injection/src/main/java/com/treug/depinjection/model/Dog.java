@@ -5,4 +5,9 @@ public class Dog implements Pet {
     System.out.println("Bow-Wow");
   }
 
+  public Dog() {
+    System.out.println("Dog bean is created");
+  }
+
+
 }
