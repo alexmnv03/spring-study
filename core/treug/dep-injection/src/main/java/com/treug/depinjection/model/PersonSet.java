@@ -1,12 +1,11 @@
 package com.treug.depinjection.model;
 
-public class Person {
+public class PersonSet {
 
   private Pet pet;
 
-  public Person(Pet pet) {
-    System.out.println("Person bean is created");
-    this.pet = pet;
+  public PersonSet() {
+    System.out.println("PersonSet bean is created");
   }
 
   public void setPet(Pet pet) {
@@ -16,5 +15,7 @@ public class Person {
 
   public void callYourPet() {
     System.out.println("Hell! my love pet!");
+    pet.say();
   }
+
 }

@@ -17,4 +17,11 @@
         class="com.treug.depinjection.model.Person">
     <constructor-arg ref="myPet"></constructor-arg>
   </bean>
+
+  <bean id="mySetPerson"
+        class="com.treug.depinjection.model.PersonSet">
+    <property name="pet" ref="myPetCat"></property>
+
+  </bean>
+
 </beans>
