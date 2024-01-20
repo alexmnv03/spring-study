@@ -1,4 +1,4 @@
-package com.treug.depinjection.two;
+package com.treug.depinjection.strinj;
 
 import com.treug.depinjection.model.Pet;
 
@@ -7,6 +7,9 @@ public class Person {
   private Pet pet;
   private String surName;
   private int age;
+
+  public Person() {
+  }
 
   public Person(Pet pet) {
     System.out.println("Person bean is created");
@@ -27,6 +30,7 @@ public class Person {
   }
 
   public void setSurName(String surName) {
+    System.out.println("com.treug.depinjection.strinj.Person set surName");
     this.surName = surName;
   }
 
@@ -35,6 +39,7 @@ public class Person {
   }
 
   public void setAge(int age) {
+    System.out.println("com.treug.depinjection.strinj.Person set age");
     this.age = age;
   }
 

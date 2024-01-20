@@ -24,4 +24,12 @@
 
   </bean>
 
+  <bean id="strPerson"
+        class="com.treug.depinjection.strinj.Person">
+    <property name="pet" ref="myPetCat"></property>
+    <property name="surName" value="Family"></property>
+    <property name="age" value="37"></property>
+
+  </bean>
+
 </beans>
