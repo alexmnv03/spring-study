@@ -3,4 +3,4 @@
 readme
 
 feature/start
-feature/dependency-other
+feature/bean-scope
