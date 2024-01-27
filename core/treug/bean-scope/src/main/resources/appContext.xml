@@ -9,35 +9,19 @@
 
   <context:property-placeholder location="classpath:myApp.properties"></context:property-placeholder>
 
-  <bean id="myPet" class="com.treug.depinjection.model.Dog">
+  <bean id="myPet" class="com.treug.beanscope.model.Dog">
   </bean>
-  <bean id="myPetCat" class="com.treug.depinjection.model.Cat">
+  <bean id="myPetCat" class="com.treug.beanscope.model.Cat">
   </bean>
+
 
   <bean id="myPerson"
-        class="com.treug.depinjection.model.Person">
-    <constructor-arg ref="myPet"></constructor-arg>
-  </bean>
-
-  <bean id="mySetPerson"
-        class="com.treug.depinjection.model.PersonSet">
-    <property name="pet" ref="myPetCat"></property>
-
-  </bean>
-
-  <bean id="strPerson"
-        class="com.treug.depinjection.strinj.Person">
+        class="com.treug.beanscope.model.Person">
     <property name="pet" ref="myPetCat"></property>
     <property name="surName" value="Family"></property>
     <property name="age" value="37"></property>
 
   </bean>
 
-  <bean id="strNoPrPerson"
-        class="com.treug.depinjection.strInjNoProp.Person">
-    <property name="pet" ref="myPetCat"></property>
-    <property name="surName" value="${person.surName}"></property>
-    <property name="age" value="${person.age}"></property>
-  </bean>
 
 </beans>
