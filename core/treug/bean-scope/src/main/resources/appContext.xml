@@ -9,9 +9,12 @@
 
   <context:property-placeholder location="classpath:myApp.properties"></context:property-placeholder>
 
-  <bean id="myPet" class="com.treug.beanscope.model.Dog">
+  <bean id="myPet" class="com.treug.beanscope.model.Dog"
+        scope="singleton"
+  >
   </bean>
-  <bean id="myPetCat" class="com.treug.beanscope.model.Cat">
+  <bean id="myPetCat" class="com.treug.beanscope.model.Cat"
+        scope="prototype">
   </bean>
 
 
