@@ -8,8 +8,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class PersonTest {
 
   public static void main(String[] args) {
-//    ClassPathXmlApplicationContext context =
-//        new ClassPathXmlApplicationContext("appContext.xml");
     AnnotationConfigApplicationContext context =
         new AnnotationConfigApplicationContext(MyConfig.class);
 

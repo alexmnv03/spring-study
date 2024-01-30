@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 public class Person {
 
   private Pet pet;
-  @Value("${person.surname}")
+  @Value("${person.surName}")
   private String surName;
   @Value("${person.age}")
   private int age;
