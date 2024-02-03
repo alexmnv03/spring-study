@@ -20,4 +20,14 @@ public class Cat implements Pet{
   public void say() {
     System.out.println("may-may");
   }
+
+  public void init() {
+    System.out.println("Class Cat: init method");
+  }
+
+  public void destroy() {
+    System.out.println("Class Cat: destroy method");
+  }
+
+
 }

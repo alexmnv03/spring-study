@@ -13,4 +13,11 @@
         destroy-method="destroy"
   >
   </bean>
+
+  <bean id="myCat" class="com.treug.initdestroy.model.Cat"
+        init-method="init"
+        destroy-method="destroy"
+        scope="prototype"
+  >
+  </bean>
 </beans>
