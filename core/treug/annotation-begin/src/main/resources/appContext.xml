@@ -7,17 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+  <context:component-scan base-package="com.treug.annotationbegin"></context:component-scan>
 
-  <bean id="myPet" class="com.treug.initdestroy.model.Dog"
-        init-method="init"
-        destroy-method="destroy"
-  >
-  </bean>
 
-  <bean id="myCat" class="com.treug.initdestroy.model.Cat"
-        init-method="init"
-        destroy-method="destroy"
-        scope="prototype"
-  >
-  </bean>
 </beans>
