@@ -3,6 +3,6 @@
 readme
 
 feature/start
-feature/annotation-begin
+feature/annotation-autowired
 
-treug property-source
+treug annotation-autowired
