@@ -3,6 +3,6 @@
 readme
 
 feature/start
-feature/annotation-autowired
+feature/annotation-qualifier
 
-treug annotation-autowired
+treug annotation-qualifier
