@@ -3,20 +3,14 @@ package com.treug.annotationautowired.model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component("personBean")
-public class Person {
+@Component("personSetBean")
+public class PersonSet {
 
   private Pet pet;
   private String surName;
   private int age;
 
-
   @Autowired
-  public Person(Pet pet) {
-    System.out.println("Person bean is created");
-    this.pet = pet;
-  }
-
   public void setPet(Pet pet) {
     System.out.println("Person add animal");
     this.pet = pet;
@@ -48,4 +42,5 @@ public class Person {
     System.out.println("Hell! my love pet!");
     pet.say();
   }
+
 }
