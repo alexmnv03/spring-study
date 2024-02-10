@@ -1,6 +1,7 @@
 package com.treug.annotationautowired.service;
 
 import com.treug.annotationautowired.model.Person;
+import com.treug.annotationautowired.model.PersonAny;
 import com.treug.annotationautowired.model.PersonSet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,6 +17,11 @@ public class AutoConstructTest {
 
     PersonSet personSet = context.getBean("personSetBean", PersonSet.class);
     personSet.callYourPet();
+
+    PersonAny personAny = context.getBean("personAnyBean", PersonAny.class);
+    personAny.callYourPet();
+
+
 
   }
 }
