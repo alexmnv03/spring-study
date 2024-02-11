@@ -10,8 +10,10 @@ public class QualifierTest {
         new ClassPathXmlApplicationContext("appContext.xml");
 
     Person person = context.getBean("personBean", Person.class);
-
     person.callYourPet();
+
+    PersonSet personSet = context.getBean("personSetBean", PersonSet.class);
+    personSet.callYourPet();
 
     context.close();
 
