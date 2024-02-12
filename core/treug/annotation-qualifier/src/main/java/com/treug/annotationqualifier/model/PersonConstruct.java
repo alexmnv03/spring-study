@@ -1,25 +1,18 @@
 package com.treug.annotationqualifier.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component("personBean")
-public class Person {
+@Component("personConstructBean")
+public class PersonConstruct {
 
-  @Autowired
-  @Qualifier("dog")
-  //@Qualifier("catBean")
   private Pet pet;
   private String surName;
   private int age;
 
-//  public Person(Pet pet) {
-//    System.out.println("Person bean is created");
-//    this.pet = pet;
-//  }
-
-  public Person() {
+  public PersonConstruct(@Qualifier("dog") Pet pet) {
+    System.out.println("Person bean is created");
+    this.pet = pet;
   }
 
   public void setPet(Pet pet) {
@@ -53,4 +46,5 @@ public class Person {
     System.out.println("Hell! my love pet!");
     pet.say();
   }
+
 }

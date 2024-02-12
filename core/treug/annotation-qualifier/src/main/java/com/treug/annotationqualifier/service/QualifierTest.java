@@ -1,6 +1,8 @@
 package com.treug.annotationqualifier.service;
 
 import com.treug.annotationqualifier.model.Person;
+import com.treug.annotationqualifier.model.PersonConstruct;
+import com.treug.annotationqualifier.model.PersonSet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class QualifierTest {
@@ -14,6 +16,9 @@ public class QualifierTest {
 
     PersonSet personSet = context.getBean("personSetBean", PersonSet.class);
     personSet.callYourPet();
+
+    PersonConstruct personConstruct = context.getBean("personConstructBean", PersonConstruct.class);
+    personConstruct.callYourPet();
 
     context.close();
 

@@ -1,4 +1,4 @@
-package com.treug.annotationqualifier.service;
+package com.treug.annotationqualifier.model;
 
 import com.treug.annotationqualifier.model.Pet;
 import org.springframework.beans.factory.annotation.Autowired;
