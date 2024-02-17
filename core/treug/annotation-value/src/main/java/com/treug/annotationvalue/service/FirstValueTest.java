@@ -1,6 +1,7 @@
 package com.treug.annotationvalue.service;
 
 import com.treug.annotationvalue.model.Person;
+import com.treug.annotationvalue.model.PersonValue;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class FirstValueTest {
@@ -14,6 +15,12 @@ public class FirstValueTest {
 
     System.out.println(person.getSurName());
     System.out.println(person.getAge());
+
+    PersonValue personValue = context.getBean("personValueBean", PersonValue.class);
+    personValue.callYourPet();
+
+    System.out.println(personValue.getSurName());
+    System.out.println(personValue.getAge());
 
     context.close();
 
