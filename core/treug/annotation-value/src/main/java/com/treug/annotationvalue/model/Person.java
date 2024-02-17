@@ -1,13 +1,16 @@
 package com.treug.annotationvalue.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("personBean")
 public class Person {
 
   private Pet pet;
+  @Value("Petrov")
   private String surName;
+  @Value("35")
   private int age;
 
 
