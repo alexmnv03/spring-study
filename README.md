@@ -3,6 +3,6 @@
 readme
 
 feature/start
-feature/annotation-value
+feature/annotation-scope
 
-treug annotation-qualifier
+treug annotation-scope
