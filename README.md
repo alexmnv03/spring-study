@@ -3,6 +3,6 @@
 readme
 
 feature/start
-feature/annotation-value
+feature/spring-only-java-code
 
-treug annotation-qualifier
+treug spring-only-java-code
