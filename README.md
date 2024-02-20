@@ -3,6 +3,6 @@
 readme
 
 feature/start
-feature/annotation-scope
+feature/spring-only-java-code
 
-treug annotation-scope
+treug spring-only-java-code
