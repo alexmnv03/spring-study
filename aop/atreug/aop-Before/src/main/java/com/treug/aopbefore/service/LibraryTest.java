@@ -12,6 +12,8 @@ public class LibraryTest {
 
     Library library = context.getBean("libraryBean", Library.class);
 
+    library.getBook();
+
     context.close();
   }
 }
