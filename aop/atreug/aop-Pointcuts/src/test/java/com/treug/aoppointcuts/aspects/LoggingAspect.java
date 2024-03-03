@@ -18,4 +18,9 @@ public class LoggingAspect {
     System.out.println("beforeGetBookAdvice: Only Uni Попытка получить книгу");
   }
 
+  @Before("execution(public void get*())")
+  public void beforeGetAnyAdvice(){
+    System.out.println("beforeGetAnyAdvice: Попытка получить книгу");
+  }
+
 }
