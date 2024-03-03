@@ -23,4 +23,30 @@ public class LoggingAspect {
     System.out.println("beforeGetAnyAdvice: Попытка получить книгу");
   }
 
+  @Before("execution(public void returnBook())")
+  public void beforeReturnBookAdvice(){
+    System.out.println("beforeReturnBookAdvice: Попытка вернуть книгу");
+  }
+
+  @Before("execution(public void *())")
+  public void beforeAnyAdvice(){
+    System.out.println("beforeGetAnyAdvice: Попытка что-нить чего-нить");
+  }
+
+  @Before("execution(public * returnBook())")
+  public void beforeAnyReturnBookAdvice(){
+    System.out.println("beforeReturnBookAdvice: Попытка вернуть книгу");
+  }
+
+  @Before("execution(* returnBook())")
+  public void beforeAllReturnBookAdvice(){
+    System.out.println("beforeAllReturnBookAdvice: Попытка вернуть книгу");
+  }
+
+  @Before("execution(* *())")
+  public void beforeAllAdvice(){
+    System.out.println("beforeAllAdvice: Попытка вернуть книгу");
+  }
+
+
 }

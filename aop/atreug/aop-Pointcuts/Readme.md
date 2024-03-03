@@ -17,3 +17,9 @@ Spring AOP испольует AspectJ Pointcut expression language. Т.е опр
 
 Но иногда нам необходимо, чтобы срабатывали для всем методов начинающихся на get, добавим еще 
 одни аспект
+
+Добавим еще одни совет beforeReturnBookAdvice
+
+Мы так же можем добавить ваще совет на любой метод, например beforeAnyAdvice
+
+Можем писать и вот так beforeAnyReturnBookAdvice или так beforeAllReturnBookAdvice и даже вот так beforeAllAdvice
