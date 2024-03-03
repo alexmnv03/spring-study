@@ -12,4 +12,10 @@ public class LoggingAspect {
   public void beforeGetBookAdvice(){
     System.out.println("beforeGetBookAdvice: Попытка получить книгу");
   }
+
+  @Before("execution(public void com.treug.aoppointcuts.lib.UniLibrary.getBook())")
+  public void beforeUniGetBookAdvice(){
+    System.out.println("beforeGetBookAdvice: Only Uni Попытка получить книгу");
+  }
+
 }
