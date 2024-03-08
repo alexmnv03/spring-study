@@ -5,7 +5,7 @@ Pointcut - это выражение описывающее где должен 
 Spring AOP испольует AspectJ Pointcut expression language. Т.е определнные правила для написания 
 выражений для создания Pointcut  
 
-В классе LibraryTest мы видим, что пере каждым вызовом метода getBook в обоих классах был вызван 
+В классе LibraryTest мы видим, что перед каждым вызовом метода getBook в обоих классах был вызван 
 наш аспект.
 Это происходи из-ха того что наш POintCut "execution(public void getBook())" подходит под оба 
 описания метода
@@ -23,3 +23,17 @@ Spring AOP испольует AspectJ Pointcut expression language. Т.е опр
 Мы так же можем добавить ваще совет на любой метод, например beforeAnyAdvice
 
 Можем писать и вот так beforeAnyReturnBookAdvice или так beforeAllReturnBookAdvice и даже вот так beforeAllAdvice
+
+А теперь займемся параметрами метода
+Добавим в метод getBook(String bookName) параметр и мы увидим, что теперь наш совет не работает.
+Исправим это и теперь все ОК
+
+Теперь мы хотим, чтобы под наш шаблон подходил любой метод с одним параметром, см. beforeGetAnyAdvice
+
+А вот если мы хотим, чтобы подходил любой метод с любым кол-вом параметров (в том числе и без 
+параметров) см. beforeGetAnyManyAdvice
+
+А теперь передадим в наш метод параметр в виде объекта см. beforeGetParamBookAdvice
+Следует обратить внимание как надо правильно писать объект с полным путем com.treug.aoppointcuts.lib.Book
+
+А вот если нам необходимо указать этот обхект, а дальше все методы с любым кол-воми параметров, см. beforeGetParamBookAndAnyAdvice
