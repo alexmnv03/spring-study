@@ -16,6 +16,7 @@ public class UniLibraryTwoTest {
     uniLibraryTwo.returnBook();
 
     Book book = context.getBean("book", Book.class);
+    uniLibraryTwo.getBook(book);
 
     context.close();
   }
