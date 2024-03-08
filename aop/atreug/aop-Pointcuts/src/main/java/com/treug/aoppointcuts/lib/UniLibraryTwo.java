@@ -13,8 +13,8 @@ public class UniLibraryTwo {
 //        System.out.println("Мы возвращаем книгу UniLibrary");
 //    }
 
-    public void getMagazine(){
-        System.out.println("Мы берем журнал из UniLibrary");
+    public void getMagazine(int count){
+        System.out.println("Мы берем журнал из UniLibrary " + count);
     }
 
 }

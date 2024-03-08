@@ -25,3 +25,9 @@ Spring AOP испольует AspectJ Pointcut expression language. Т.е опр
 Можем писать и вот так beforeAnyReturnBookAdvice или так beforeAllReturnBookAdvice и даже вот так beforeAllAdvice
 
 А теперь займемся параметрами метода
+Добавим в метод getBook(String bookName) параметр и мы увидим, что теперь наш совет не работает.
+Исправим это и теперь все ОК
+
+Теперь мы хотим, чтобы под наш шаблон подходил любой метод с одним параметром, см. beforeGetAnyAdvice
+
+А вот если мы хотим, чтобы подходил любой метод с любым кол-вом параметров см.
