@@ -37,3 +37,5 @@ Spring AOP испольует AspectJ Pointcut expression language. Т.е опр
 Следует обратить внимание как надо правильно писать объект с полным путем com.treug.aoppointcuts.lib.Book
 
 А вот если нам необходимо указать этот обхект, а дальше все методы с любым кол-воми параметров, см. beforeGetParamBookAndAnyAdvice
+
+## Advert
