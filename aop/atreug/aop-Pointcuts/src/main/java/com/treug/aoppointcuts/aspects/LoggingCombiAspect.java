@@ -34,5 +34,22 @@ public class LoggingCombiAspect {
     System.out.println("beforeGetOrReturnAllAdvice: Попытка получить ? ");
   }
 
+  @Pointcut("execution(* com.treug.aoppointcuts.lib.*(..))")
+  private void allMethodsFromLibrary(){
+  }
+
+  @Pointcut("execution(public void com.treug.aoppointcuts.lib.returnMagazine())")
+  private void pvreturnMagazine(){
+  }
+
+  @Pointcut("allMethodsFromLibrary() && !pvreturnMagazine()")
+  public void allMethodsExceptFromLibrary(){
+  }
+
+  @Before("allMethodsExceptFromLibrary()")
+  public void beforeAllMethodsExceptFromLibrary(){
+    System.out.println("beforeAllMethodsExceptFromLibrary: log finish ");
+  }
+
 
 }
