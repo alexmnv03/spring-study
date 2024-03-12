@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class LoggingAndSecurityAspect {
 
-  @Before("allGetMethod())")
+  @Pointcut("allGetMethod())")
   public void beforeGetBookAdvice(){
     System.out.println("beforeGetBookAdvice: Попытка получить книгу/журнал");
   }
 
-  @Before("allGetMethod())")
+  @Pointcut("allGetMethod())")
   public void beforeGetSecurityAdvice(){
     System.out.println("beforeGetSecurityAdvice: проверка прав на получение");
   }
