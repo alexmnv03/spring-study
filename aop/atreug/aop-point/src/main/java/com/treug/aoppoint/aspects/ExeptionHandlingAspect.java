@@ -2,6 +2,7 @@ package com.treug.aoppoint.aspects;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -9,9 +10,9 @@ import org.springframework.stereotype.Component;
 @Order(2)
 public class ExeptionHandlingAspect {
 
-    @Before("com.treug.aoporderaspect.aspects.MyPointcut.allAddMethod())")
+    @Before("com.treug.aoppoint.aspects.MyPointcut.allAddMethod())")
     public void beforeGetExeptionHandlingAspect(){
-        System.out.println("beforeGetExeptionHandlingAspect: Ловим исключения при Попытка получить книгу/журнал");
+        System.out.println("beforeAddExeptionHandlingAspect: Ловим исключения при Попытка получить книгу/журнал");
     }
 
 
