@@ -3,7 +3,7 @@
 readme
 
 feature/start
-feature/aop-orederAspect
+feature/aop-point
 
-treug aop-orderAspect
+treug aop-point
 
