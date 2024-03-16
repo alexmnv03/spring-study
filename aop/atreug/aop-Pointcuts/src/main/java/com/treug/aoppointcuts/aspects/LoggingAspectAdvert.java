@@ -8,9 +8,19 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class LoggingAspectAdvert {
 
-  @Before("execution(* get*())")
-  public void beforeGetBookAdvice(){
-    System.out.println("beforeGetBookAdvice: Попытка получить книгу/журнал");
+  @Pointcut("execution(* get*())")
+  public void allGetMethod(){
   }
+
+    @Before("allGetMethod())")
+    public void beforeGetBookAdvice(){
+        System.out.println("beforeGetBookAdvice: Попытка получить книгу/журнал");
+    }
+
+    @Before("allGetMethod())")
+    public void beforeGetSecurityAdvice(){
+        System.out.println("beforeGetSecurityAdvice: проверка прав на получение");
+    }
+
 
 }
