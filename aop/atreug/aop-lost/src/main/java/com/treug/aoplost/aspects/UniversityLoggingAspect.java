@@ -10,8 +10,13 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class UniversityLoggingAspect {
 
-    @AfterThrowing("execution(* getStudents())")
-    public void afterThrowingGetStudentsAdvice(List<Student> list) {
+//    @AfterThrowing("execution(* getStudents())")
+//    public void afterThrowingGetStudentsAdvice() {
+//        System.out.println("afterThrowingGetStudentsAdvice: Логируем выброс исключения при работе метода getStudents");
+//    }
+
+    @AfterThrowing(pointcut = "execution(* getStudents())", throwing ="exeption")
+    public void afterThrowingGetStudentsAdvice(Throwable exeption) {
         System.out.println("afterThrowingGetStudentsAdvice: Логируем выброс исключения при работе метода getStudents");
     }
 

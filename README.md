@@ -3,7 +3,7 @@
 readme
 
 feature/start
-feature/aop-AfterThrowing
+feature/aop-After
 
-treug aop-AfterThrowing
+treug aop-After
 
