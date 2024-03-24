@@ -3,6 +3,7 @@ package com.treug.aoplost.aspects;
 import com.treug.aoplost.model.Student;
 import java.util.List;
 import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
 
